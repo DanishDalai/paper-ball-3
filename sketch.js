@@ -30,12 +30,12 @@ function draw() {
 
 function mouseDragged(){
   if (gameState!=="launched"){
-      Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
+      Matter.Body.setPosition(paper.body, {x: mouseX , y: mouseY});
   }
 }
 
 
 function mouseReleased(){
-  slingshot.fly();
+  slingShot.fly();
   gameState = "launched";
 }
